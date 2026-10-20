@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Geometry Lab | Interactive Math Lesson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">◉</span><span>Circle Geometry <small>INTERACTIVE LESSON</small></span></div>
+    <div class="top-actions"><span id="progressLabel">Lesson 1 of 6</span><button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☾</button></div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <p class="side-label">YOUR LEARNING PATH</p>
+      <button class="nav-item active" data-slide="0"><span>01</span><div><b>Circle Basics</b><small>Meet the parts</small></div></button>
+      <button class="nav-item" data-slide="1"><span>02</span><div><b>Central & Inscribed</b><small>Angles and arcs</small></div></button>
+      <button class="nav-item" data-slide="2"><span>03</span><div><b>Intersecting Lines</b><small>Inside and outside</small></div></button>
+      <button class="nav-item" data-slide="3"><span>04</span><div><b>Tangent Pathways</b><small>Real-life problem</small></div></button>
+      <button class="nav-item" data-slide="4"><span>05</span><div><b>Star & Spokes</b><small>Regular shapes</small></div></button>
+      <button class="nav-item" data-slide="5"><span>06</span><div><b>Mini Quiz</b><small>Check your learning</small></div></button>
+      <div class="sidebar-tip"><span>💡</span><p><b>Study tip</b><br>Look at the highlighted lines, read the rule, then try the quick check.</p></div>
+    </aside>
+
+    <main class="main-content">
+      <div class="lesson-meta"><span class="pill">GRADE 9 • GEOMETRY</span><span id="sectionTag">FOUNDATIONS</span></div>
+      <div class="hero-row">
+        <div><p class="eyebrow" id="eyebrow">WELCOME TO THE CIRCLE LAB</p><h1 id="slideTitle">Circles are full of clues.</h1><p class="lead" id="slideLead">Explore how arcs, angles, secants, and tangents work together. Use the diagrams and mini activities to discover the rules.</p></div>
+        <div class="hero-badge"><span>360°</span><small>one full turn</small></div>
+      </div>
+      <div class="progress-track"><div id="progressBar"></div></div>
+      <section id="slideContent" class="content-grid"></section>
+      <div class="bottom-nav"><button id="prevBtn" class="secondary-btn" disabled>← Previous</button><span id="pageCount">01 / 06</span><button id="nextBtn" class="primary-btn">Next lesson →</button></div>
+      <footer>Circle Geometry Lab <span>Learn it • See it • Try it</span></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
